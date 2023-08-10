@@ -6,14 +6,21 @@ function pintar() {
 const ele = document.getElementById("ele1");
 ele.addEventListener("click", pintar);*/
 
-function pintar(event) {
-  event.target.style.backgroundColor = "yellow";
+/* 
+3.2
+function pintar(event){
+    event.target.style.backgroundColor = 'yellow';
 }
 const ele = document.getElementById("ele1");
 ele.addEventListener("click", pintar);
 
-elemento = document.getElementById("ele1");
-function pintarVerde(parametro = "green") {
-  elemento.style.backgroundColor = parametro;
+*/
+
+//3.3
+
+function pintar(event, color = "green") {
+  event.target.style.backgroundColor = color;
 }
-pintarVerde();
+const ele = document.getElementById("ele1");
+ele.addEventListener("click", (event) => pintar(event, "yellow"));
+pintar({ target: ele });
