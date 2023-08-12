@@ -1,4 +1,4 @@
-/*
+/* ESTE ES EL REQUERIMIENTO 3  
 3.1. 
 function pintar() {
   ele.style.backgroundColor = "yellow";
